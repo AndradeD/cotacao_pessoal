@@ -1,0 +1,11 @@
+.git
+.gitignore
+.dockerignore
+**/node_modules
+**/dist
+**/target
+**/.mvn
+**/.vscode
+**/.idea
+**/*.log
+HELP.md

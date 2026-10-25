@@ -1,0 +1,14 @@
+services:
+  cotacaobr:
+    build:
+      context: ..
+      dockerfile: init/Dockerfile
+    image: cotacaobr:latest
+    container_name: cotacaobr-app
+    ports:
+      - "8080:8080"
+    environment:
+      - SERVER_PORT=8080
+      # Para sobrescrever o token da API Brapi, descomente a linha abaixo:
+      # - BRAPI_TOKEN=seu_token_aqui
+    restart: unless-stopped
